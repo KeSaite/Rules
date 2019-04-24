@@ -12,7 +12,7 @@ SS1 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
 SS2 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
 SS3 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
 
-S1 = socks5, 1.1.1.1, 80, name,   1111
+S1 = socks5, 1.1.1.1, 80, name, 1111
 S2 = socks5, 1.1.1.1, 80, name, 1111
 S3 = socks5, 1.1.1.1, 80, name, 1111
 
