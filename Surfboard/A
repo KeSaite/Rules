@@ -7,7 +7,6 @@ dns-server = 221.4.8.1, 223.5.5.5, 119.29.29.29, 101.6.6.6, 9.9.9.9, 116.62.218.
 exclude-simple-hostnames = true
 enhanced-mode-by-rule = true
 
-[Proxy] 
 [Proxy]
 SS1 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
 SS2 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
