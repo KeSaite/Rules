@@ -30,7 +30,6 @@ S-Auto = url-test, S1, S2, url=http://www.gstatic.com/generate_204, interval = 6
 AdBlock = select, On, Off
 
 [Rule]
-# (GlobalTV)
 # > ABC
 DOMAIN-SUFFIX,edgedatg.com,Proxy
 DOMAIN-SUFFIX,go.com,Proxy
