@@ -16,9 +16,9 @@ S1 = socks5, 1.1.1.1, 80, name, 1111
 S2 = socks5, 1.1.1.1, 80, name, 1111
 S3 = socks5, 1.1.1.1, 80, name, 1111
 
+DIRECT = direct
 On = reject
 Off = direct
-Direct = direct
 
 [Proxy Group]
 Proxy = select, SS, S, S-Auto, SS-Auto
