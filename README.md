@@ -1,6 +1,6 @@
 ## Surge配置详解
 
-基于`ZHUANGZHUANG`由 [@LABKNS](https://github.com/LABKNS) 编辑，自用:</strong><code>Surfboard</code>/</strong><code>Clash</code>
+基于`ZHUANGZHUANG`由 [@LABKNS](https://github.com/LABKNS) 编辑，自用:</strong><code>Surfboard</code> </strong><code>Clash</code>
 
 
 
