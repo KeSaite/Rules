@@ -16,6 +16,7 @@ S1 = socks5, 1.1.1.1, 80, name, 1111
 S2 = socks5, 1.1.1.1, 80, name, 1111
 S3 = socks5, 1.1.1.1, 80, name, 1111
 
+Direct = direct
 On = reject
 Off = direct
 
