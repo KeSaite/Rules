@@ -16,7 +16,7 @@ enhanced-mode-by-rule = true
 🥥 = socks5, 1.1.1.1, 80, name, 1111
 🥝 = socks5, 1.1.1.1, 80, name, 1111
 
-direct = 🥕
+🥕 = direct
 On = reject
 Off = direct
 
