@@ -28,8 +28,8 @@ Off = direct
 🍓 = url-test,🍒,🍈,🍐, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
 🍖 = url-test,🍇,🥥,🥝, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
 🍭 = select, On, Off
+
 [Rule]
-# (GlobalTV)
 # > ABC
 DOMAIN-SUFFIX,edgedatg.com,🍅
 DOMAIN-SUFFIX,go.com,🍅
