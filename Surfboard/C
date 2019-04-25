@@ -16,8 +16,9 @@ enhanced-mode-by-rule = true
 🥥 = socks5, 1.1.1.1, 80, name, 1111
 🥝 = socks5, 1.1.1.1, 80, name, 1111
 
+direct = 🥕
 On = reject
-Off = 🥕
+Off = direct
 
 [Proxy Group]
 🍅 = select,🍺,🥃
