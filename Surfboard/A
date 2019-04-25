@@ -175,7 +175,7 @@ DOMAIN-SUFFIX,vv.video.qq.com,DIRECT
 DOMAIN,analytics.google.com,Proxy
 DOMAIN,analyticsinsights-pa.googleapis.com,Proxy
 DOMAIN,analyticsreporting.googleapis.com,Proxy
-DOMAIN-SUFFIX,vd.l.qq.com,Domestic
+
 # > General
 DOMAIN-KEYWORD,adservice,AdBlock
 DOMAIN-KEYWORD,analytics,AdBlock
