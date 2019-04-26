@@ -37,6 +37,9 @@ Proxy Group:
       - Shadowsocks
       
 Rule:
+  - DOMAIN-KEYWORD,data.bilibilijj.com,DIRECT
+  - DOMAIN-SUFFIX,data.bilibilijj.com,DIRECT
+  - DOMAIN,data.bilibilijj.com,DIRECT
   - DOMAIN,hls.itunes.apple.com,Proxy
   - DOMAIN,itunes.apple.com,Proxy
   - DOMAIN,itunes.com,Proxy
