@@ -2,10 +2,10 @@
 loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+dns-server = 221.4.8.1, 223.5.5.5, 119.29.29.29, 101.6.6.6, 9.9.9.9, 116.62.218.19:443, 208.67.220.220:443, 208.67.222.222:443, system
 ipv6 = false
-dns-server = 223.5.5.5, 223.6.6.6, 8.8.8.8, 8.8.4.4, 114.114.114.114, 117.50.10.10, 119.29.29.29, 1.2.4.8, system
-exclude-simple-hostnames = true
 enhanced-mode-by-rule = true
+exclude-simple-hostnames = true
 
 [Proxy]
 SS1 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
