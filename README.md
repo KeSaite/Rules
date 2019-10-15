@@ -121,17 +121,17 @@ tolerance 单位毫秒，只有当 原来优胜者的成绩 - 新的优胜者的
 | DOMAIN-KEYWORD, | apple, | DIRECT | --- | 
 | IP-CIDR, | 10.0.0.0/8, | DIRECT | --- | 
 | GEOIP, | CN, | DIRECT | --- | 
-| USER-AGENT, | Instagram*, | Proxy | NO |
-| URL-REGEX, | ^http:\/\/google\.com, | Proxy | NO |
-| PROCESS-NAME, | Telegram, | Proxy | BETA |
+| USER-AGENT, | Instagram*, | PROXY | NO |
+| URL-REGEX, | ^http:\/\/google\.com, | PROXY | NO |
+| PROCESS-NAME, | Telegram, | PROXY | BETA |
 | RULE-SET, | SYSTEM, | DIRECT | --- |
 | AND, | ((DOMAIN, abc.com), (USER-AGENT, Surge*)), | DIRECT | --- |  
 | OR, | ((DOMAIN, abc.com), (USER-AGENT, Surge*)), | DIRECT | --- |  
-| NOT, | ((DOMAIN, abc.com)), | Proxy | --- |  
+| NOT, | ((DOMAIN, abc.com)), | PROXY | --- |  
 | DEST-PORT, | 80, | DIRECT | --- |  
 | SRC-IP, | 192.168.20.100, | DIRECT | --- |  
 | IN-PORT, | 6152, | DIRECT | --- |  
-| FINAL, | --- | Proxy | --- |  
+| FINAL, | --- | PROXY | --- |  
 
 __有三种基于域名的规则: “DOMAIN”, “DOMAIN-SUFFIX” 和 “DOMAIN-KEYWORD”__
 * 如果请求域完全匹配, 则匹配规则
