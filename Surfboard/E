@@ -2,10 +2,10 @@
 loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-ipv6 = false
 dns-server = 221.4.8.1, 223.5.5.5, 119.29.29.29, 101.6.6.6, 9.9.9.9, 116.62.218.19:443, 208.67.220.220:443, 208.67.222.222:443, system
-exclude-simple-hostnames = true
+ipv6 = false
 enhanced-mode-by-rule = true
+exclude-simple-hostnames = true
 
 [Proxy] 
 🍒 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
@@ -13,18 +13,19 @@ enhanced-mode-by-rule = true
 🍐 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
 
 🍇 = socks5, 1.1.1.1, 80, name, 1111
-🥥 = socks5, 1.1.1.1, 80, name, 1111
-🥝 = socks5, 1.1.1.1, 80, name, 1111
+🍧 = socks5, 1.1.1.1, 80, name, 1111
+🎂 = socks5, 1.1.1.1, 80, name, 1111
 
-🥕 = direct
+🍡 = direct
+🍢 = reject
 
 [Proxy Group]
-🍅 = select,🍺,🥃
-🍺 = select,🍓,🍒,🍈,🍐
-🥃 = select,🍖,🍇,🥥,🥝
+🍅 = select, 🍺🍺, 🍞🍞
+🍺🍺 = select, 🍓, 🍒, 🍈, 🍐
+🍞🍞 = select, 🍙, 🍇, 🍧, 🎂
 
-🍓 = url-test,🍒,🍈,🍐, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
-🍖 = url-test,🍇,🥥,🥝, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
+🍓 = url-test, 🍒, 🍈, 🍐, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
+🍙 = url-test, 🍇, 🍧, 🎂, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
 
 [Rule]
 # Apple
@@ -35,8 +36,8 @@ DOMAIN,news-events.apple.com,🍅
 DOMAIN,news-client.apple.com,🍅
 DOMAIN-SUFFIX,itunes.apple.com,🍅
 DOMAIN-SUFFIX,lookup-api.apple.com,🍅
-DOMAIN-SUFFIX,lcdn-registration.apple.com,🥕
-DOMAIN-SUFFIX,mzstatic.com,🥕
+DOMAIN-SUFFIX,lcdn-registration.apple.com,🍡
+DOMAIN-SUFFIX,mzstatic.com,🍡
 
 # Facebook
 DOMAIN-SUFFIX,cdninstagram.com,🍅,force-remote-dns
@@ -95,63 +96,64 @@ DOMAIN-SUFFIX,nflxso.net,🍅
 DOMAIN-SUFFIX,nflxvideo.net,🍅
 
 # BAT
-DOMAIN-SUFFIX,baidu.com,🥕
-DOMAIN-SUFFIX,baidupcs.com,🥕
-DOMAIN-SUFFIX,bdimg.com,🥕
-DOMAIN-SUFFIX,bdstatic.com,🥕
-DOMAIN-SUFFIX,alipay.com,🥕
-DOMAIN-SUFFIX,alipayobjects.com,🥕
-DOMAIN-SUFFIX,alicdn.com,🥕
-DOMAIN-SUFFIX,aliyun.com,🥕
-DOMAIN-SUFFIX,aliyuncs.com,🥕
-DOMAIN-SUFFIX,taobao.com,🥕
-DOMAIN-SUFFIX,tmall.com,🥕
-DOMAIN-SUFFIX,qq.com,🥕
-DOMAIN-SUFFIX,qqurl.com,🥕
+DOMAIN-SUFFIX,baidu.com,🍡
+DOMAIN-SUFFIX,baidupcs.com,🍡
+DOMAIN-SUFFIX,bdimg.com,🍡
+DOMAIN-SUFFIX,bdstatic.com,🍡
+DOMAIN-SUFFIX,alipay.com,🍡
+DOMAIN-SUFFIX,alipayobjects.com,🍡
+DOMAIN-SUFFIX,alicdn.com,🍡
+DOMAIN-SUFFIX,aliyun.com,🍡
+DOMAIN-SUFFIX,aliyuncs.com,🍡
+DOMAIN-SUFFIX,taobao.com,🍡
+DOMAIN-SUFFIX,tmall.com,🍡
+DOMAIN-SUFFIX,qq.com,🍡
+DOMAIN-SUFFIX,qqurl.com,🍡
 
 # China
-DOMAIN-SUFFIX,cn,🥕
-DOMAIN-SUFFIX,126.net,🥕
-DOMAIN-SUFFIX,163.com,🥕
-DOMAIN-SUFFIX,163.net,🥕
-DOMAIN-SUFFIX,amap.com,🥕
-DOMAIN-SUFFIX,autonavi.com,🥕
-DOMAIN-SUFFIX,ccgslb.com,🥕
-DOMAIN-SUFFIX,ccgslb.net,🥕
-DOMAIN-SUFFIX,cnbeta.com,🥕
-DOMAIN-SUFFIX,cnbetacdn.com,🥕
-DOMAIN-SUFFIX,douban.com,🥕
-DOMAIN-SUFFIX,doubanio.com,🥕
-DOMAIN-SUFFIX,gtimg.com,🥕
-DOMAIN-SUFFIX,hao123.com,🥕
-DOMAIN-SUFFIX,haosou.com,🥕
-DOMAIN-SUFFIX,ifeng.com,🥕
-DOMAIN-SUFFIX,iqiyi.com,🥕
-DOMAIN-SUFFIX,jd.com,🥕
-DOMAIN-SUFFIX,mi.com,🥕
-DOMAIN-SUFFIX,miui.com,🥕
-DOMAIN-SUFFIX,netease.com,🥕
-DOMAIN-SUFFIX,netease.im,🥕
-DOMAIN-SUFFIX,qdaily.com,🥕
-DOMAIN-SUFFIX,qhimg.com,🥕
-DOMAIN-SUFFIX,qihucdn.com,🥕
-DOMAIN-SUFFIX,qiniucdn.com,🥕
-DOMAIN-SUFFIX,qiniudn.com,🥕
-DOMAIN-SUFFIX,sogou.com,🥕
-DOMAIN-SUFFIX,sogoucdn.com,🥕
-DOMAIN-SUFFIX,sohu.com,🥕
-DOMAIN-SUFFIX,steamstatic.com,🥕
-DOMAIN-SUFFIX,suning.com,🥕
-DOMAIN-SUFFIX,tudou.com,🥕
-DOMAIN-SUFFIX,upaiyun.com,🥕
-DOMAIN-SUFFIX,clouddn.com,🥕
-DOMAIN-SUFFIX,upyun.com,🥕
-DOMAIN-SUFFIX,weibo.com,🥕
-DOMAIN-SUFFIX,youku.com,🥕
-DOMAIN-SUFFIX,xunlei.com,🥕
-DOMAIN-SUFFIX,zhihu.com,🥕
-DOMAIN-SUFFIX,zhimg.com,🥕
-DOMAIN,ip.bjango.com,🥕
+DOMAIN-SUFFIX,cn,🍡
+DOMAIN-SUFFIX,126.net,🍡
+DOMAIN-SUFFIX,163.com,🍡
+DOMAIN-SUFFIX,163.net,🍡
+DOMAIN-SUFFIX,amap.com,🍡
+DOMAIN-SUFFIX,autonavi.com,🍡
+DOMAIN-SUFFIX,ccgslb.com,🍡
+DOMAIN-SUFFIX,ccgslb.net,🍡
+DOMAIN-SUFFIX,cnbeta.com,🍡
+DOMAIN-SUFFIX,cnbetacdn.com,🍡
+DOMAIN-SUFFIX,douban.com,🍡
+DOMAIN-SUFFIX,doubanio.com,🍡
+DOMAIN-SUFFIX,gtimg.com,🍡
+DOMAIN-SUFFIX,hao123.com,🍡
+DOMAIN-SUFFIX,haosou.com,🍡
+DOMAIN-SUFFIX,ifeng.com,🍡
+DOMAIN-SUFFIX,iqiyi.com,🍡
+DOMAIN-SUFFIX,jd.com,🍡
+DOMAIN-SUFFIX,mi.com,🍡
+DOMAIN-SUFFIX,miui.com,🍡
+DOMAIN-SUFFIX,netease.com,🍡
+DOMAIN-SUFFIX,netease.im,🍡
+DOMAIN-SUFFIX,qdaily.com,🍡
+DOMAIN-SUFFIX,qhimg.com,🍡
+DOMAIN-SUFFIX,qihucdn.com,🍡
+DOMAIN-SUFFIX,qiniucdn.com,🍡
+DOMAIN-SUFFIX,qiniudn.com,🍡
+DOMAIN-SUFFIX,sogou.com,🍡
+DOMAIN-SUFFIX,sogoucdn.com,🍡
+DOMAIN-SUFFIX,sohu.com,🍡
+DOMAIN-SUFFIX,steamstatic.com,🍡
+DOMAIN-SUFFIX,suning.com,🍡
+DOMAIN-SUFFIX,tudou.com,🍡
+DOMAIN-SUFFIX,upaiyun.com,🍡
+DOMAIN-SUFFIX,clouddn.com,🍡
+DOMAIN-SUFFIX,upyun.com,🍡
+DOMAIN-SUFFIX,weibo.com,🍡
+DOMAIN-SUFFIX,youku.com,🍡
+DOMAIN-SUFFIX,xunlei.com,🍡
+DOMAIN-SUFFIX,zhihu.com,🍡
+DOMAIN-SUFFIX,zhimg.com,🍡
+
+DOMAIN,ip.bjango.com,🍡
 
 # Blocked
 DOMAIN-SUFFIX,9to5mac.com,🍅
@@ -370,15 +372,15 @@ IP-CIDR,149.154.160.0/20,🍅,no-resolve
 IP-CIDR,149.154.164.0/22,🍅,no-resolve
 
 # LAN
-DOMAIN-SUFFIX,local,🥕
-IP-CIDR,192.168.0.0/16,🥕
-IP-CIDR,10.0.0.0/8,🥕
-IP-CIDR,172.16.0.0/12,🥕
-IP-CIDR,127.0.0.0/8,🥕
-IP-CIDR,100.64.0.0/10,🥕
+DOMAIN-SUFFIX,local,🍡
+IP-CIDR,192.168.0.0/16,🍡
+IP-CIDR,10.0.0.0/8,🍡
+IP-CIDR,172.16.0.0/12,🍡
+IP-CIDR,127.0.0.0/8,🍡
+IP-CIDR,100.64.0.0/10,🍡
 
 # Final
-GEOIP,CN,🥕
+GEOIP,CN,🍡
 FINAL,🍅
 
 [Host]
