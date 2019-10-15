@@ -478,11 +478,6 @@ DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-KEYWORD,usage,REJECT
 DOMAIN-KEYWORD,wlmonitor,REJECT
 DOMAIN-KEYWORD,zjtoolbar,REJECT
-# Spotify 流媒体音乐服务并没有被墙，
-# 但是**免费用户**需要每 14 天就在账户所在国/地区登陆账户，否则无法收听音乐。
-# 请根据实际情况和需求正确选择策略：
-# 使用 DIRECT 策略可以有效节约代理流量，如果你是 Premium 用户，可以使用此策略。但是如果你的地区对 Spotify 限速严重或根本无法使用，请使用 Proxy。
-# 现默认使用 Proxy 策略（Spotify 设置的地区需要与出口 IP 国家匹配）可以保证你的免费账户一直可用。
 DOMAIN-SUFFIX,scdn.co,Proxy
 DOMAIN-KEYWORD,netflix,Proxy
 DOMAIN-KEYWORD,nflx,Proxy
@@ -570,10 +565,6 @@ IP-CIDR,91.108.8.0/22,Proxy
 IP-CIDR,109.239.140.0/24,Proxy
 IP-CIDR,149.154.160.0/20,Proxy
 IP-CIDR,149.154.164.0/22,Proxy
-# 此规则可以将 Wikipedia 的请求跳转至 Wikiwand 以达到 Wikipedia 排版优化的目的。重新排版后的语言将与原页面语言保持一致。
-# 注意：此功能需要启用 Surge, Quantumult 等工具 MITM 功能，具体配置 MitM 功能请参考工具的配置手册。
-# iOS 10.3 及以上系统需要在所有配置完成后，进入 设置>通用>关于本机>证书信任度设置 中打开 Surge证书信任权限
-# Surge 可以参考 http://t.cn/RMXzgaw 配置教程（Surge 用户只看文章底部 2.0 部分即可）
 ## macOS App
 DOMAIN-SUFFIX,whatsapp.com,Proxy
 IP-CIDR,31.13.64.50/31,Proxy
@@ -798,9 +789,6 @@ IP-CIDR,198.23.80.0/27,Proxy
 IP-CIDR,208.43.115.192/27,Proxy
 IP-CIDR,208.43.117.79/32,Proxy
 IP-CIDR,208.43.122.128/27,Proxy
-## IPv6 地址段（除非您的网络环境支持 IPv6 协议，否则无需添加）
-# 此规则可以将知乎的请求头中的 User Agent 伪装为桌面版的 Chrome 浏览器以达到目的。
-# 注意：此功能同时需要 Header Rewrite 和 MitM 功能支持，所以目前仅 Surge 支持此规则。
 DOMAIN,share.dmhy.org,DIRECT
 DOMAIN,nrch.culture.tw,DIRECT
 DOMAIN,translate.google.cn,DIRECT
@@ -1242,8 +1230,6 @@ DOMAIN-SUFFIX,traffic.uusee.com,REJECT
 DOMAIN-SUFFIX,union.6.cn,REJECT
 DOMAIN-SUFFIX,wa.gtimg.com,REJECT
 DOMAIN-SUFFIX,bfshan.cn,REJECT
-# 此规则适用于学校校园网已经购买网站内容版权，且通过 校园网直连（DIRECT 策略） 或 学校提供的代理服务器（将策略改为指定服务器或服务器组的名称） 访问才能生效。
-# 此规则使用前应先咨询校方相关事宜。若校方不具有版权，此规则无用处。
 # 中国知网
 DOMAIN-KEYWORD,cnki.net,DIRECT
 # 万方
@@ -1859,7 +1845,6 @@ DOMAIN-SUFFIX,static.flv.uuzuonline.com,REJECT
 DOMAIN-SUFFIX,wanproxy.127.net,REJECT
 ## WPS
 DOMAIN-SUFFIX,ksosoft.com,REJECT
-# 此列表中的部分网站没有被 GFW 封锁，但使用代理会获得更快的速度，请选择性添加。
 ## A
 DOMAIN-SUFFIX,amazon.com,Proxy
 DOMAIN-SUFFIX,amazonaws.com,Proxy
