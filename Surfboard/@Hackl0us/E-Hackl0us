@@ -27,35 +27,6 @@ exclude-simple-hostnames = true
 🍓 = url-test, 🍒, 🍈, 🍐, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
 🍙 = url-test, 🍇, 🍧, 🎂, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
 
-[General]
-loglevel = notify
-interface = 127.0.0.1
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-dns-server = 221.4.8.1, 223.5.5.5, 119.29.29.29, 101.6.6.6, 9.9.9.9, 116.62.218.19:443, 208.67.220.220:443, 208.67.222.222:443, system
-ipv6 = false
-enhanced-mode-by-rule = true
-exclude-simple-hostnames = true
-
-[Proxy] 
-🍒 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
-🍈 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
-🍐 = custom, 1.1.1.1, 80, aes-256-gcm, 1111
-
-🍇 = socks5, 1.1.1.1, 80, name, 1111
-🍧 = socks5, 1.1.1.1, 80, name, 1111
-🎂 = socks5, 1.1.1.1, 80, name, 1111
-
-🍡 = direct
-🍢 = reject
-
-[Proxy Group]
-🍅 = select, 🍺🍺, 🍞🍞
-🍺🍺 = select, 🍓, 🍒, 🍈, 🍐
-🍞🍞 = select, 🍙, 🍇, 🍧, 🎂
-
-🍓 = url-test, 🍒, 🍈, 🍐, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
-🍙 = url-test, 🍇, 🍧, 🎂, url=http://www.google.com, interval = 300, tolerance = 80, timeout = 5
-
 [Rule]
 ## 国内网站
 DOMAIN-SUFFIX,cn,🍡
