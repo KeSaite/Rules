@@ -10,9 +10,9 @@ exclude-simple-hostnames = true
 [Proxy]
 ss_obfs = custom, 1.1.1.1, 80, chacha20-ietf-poly1305, 1111
 ss = custom, 1.1.1.1, 80, chacha20-ietf-poly1305, 1111
-socks5 = socks5, 1.1.1.1, username, password
-http = http, 1.1.1.1, username, 1111
-https = https, 1.1.1.1, username, 1111
+socks5 = socks5, 1.1.1.1, 80, username, 1111
+http = http, 1.1.1.1, 80, username, 1111
+https = https, 1.1.1.1, 80, username, 1111
 
 [Proxy Group]
 Proxy = select, ss_obfs, ss, socks5, http, https
