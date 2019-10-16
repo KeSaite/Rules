@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,tvb.com,Proxy
 DOMAIN-SUFFIX,kakao.com,Proxy
 DOMAIN-SUFFIX,kakao.co.kr,Proxy
 DOMAIN-SUFFIX,kakaocdn.net,Proxy
-# LINE 已经解除运营商屏蔽
 ## 域名
 DOMAIN-SUFFIX,line.me,Proxy
 DOMAIN-SUFFIX,naver.jp,Proxy
