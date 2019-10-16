@@ -1820,5 +1820,12 @@ IP-CIDR,100.64.0.0/10,🍡
 GEOIP,CN,🍡
 FINAL,🍅
 
+[Host]
+sci-hub.org = 80.82.77.83
+sci-hub.cc = 80.82.77.84
+sci-hub.bz = 80.82.77.84
+bbs.pcbeta.com = 218.93.127.136
+syria.sy = 127.0.0.1
+
 [URL Rewrite]
 ^http://www.google.cn https://www.google.com
