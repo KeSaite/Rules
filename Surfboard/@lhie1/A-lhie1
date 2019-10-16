@@ -1340,11 +1340,5 @@ IP-CIDR,209.237.192.0/19,Proxy
 GEOIP,CN,DIRECT
 FINAL,Proxy
 
-[Host]
-sci-hub.org = 80.82.77.83
-sci-hub.cc = 80.82.77.84
-sci-hub.bz = 80.82.77.84
-bbs.pcbeta.com = 218.93.127.136
-
 [URL Rewrite]
 ^http://www.google.cn https://www.google.com
